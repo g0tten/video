@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gotten:GottenEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gotten="http://gotten/1.0">
+  <definition>
+    <metamodel name="videostream" metamodel="/video/model/VideoStream.ecore">
+      <instances name="m1"/>
+      <instances name="m2"/>
+      <model model="/video/model/videotc"/>
+    </metamodel>
+  </definition>
+  <featureDefinitions input="true" metamodel="//@definition/@metamodel.0">
+    <features name="IsSearch">
+      <type href="VideoStream.ecore#//VideoAPITest"/>
+      <constraint>
+        <expression xsi:type="gotten:OCLComplexExpression" basicOperator="oclIsTypeOf">
+          <feat xsi:type="ecore:EReference" href="VideoStream.ecore#//VideoAPITest/request"/>
+          <oclOperation>
+            <feat>
+              <feat1 href="VideoStream.ecore#//SearchVideo"/>
+            </feat>
+          </oclOperation>
+        </expression>
+      </constraint>
+    </features>
+    <features name="IsUpdate">
+      <type href="VideoStream.ecore#//VideoAPITest"/>
+      <constraint>
+        <expression xsi:type="gotten:OCLComplexExpression" basicOperator="oclIsTypeOf">
+          <feat xsi:type="ecore:EReference" href="VideoStream.ecore#//VideoAPITest/request"/>
+          <oclOperation>
+            <feat>
+              <feat1 href="VideoStream.ecore#//UpdateVideo"/>
+            </feat>
+          </oclOperation>
+        </expression>
+      </constraint>
+    </features>
+    <features name="MaxResults" dataType="Int">
+      <type href="VideoStream.ecore#//SearchVideo"/>
+      <constraint>
+        <expression xsi:type="gotten:OCLComplexExpression">
+          <feat xsi:type="ecore:EAttribute" href="VideoStream.ecore#//SearchVideo/maxResults"/>
+        </expression>
+      </constraint>
+    </features>
+    <features name="SearchOrder" dataType="Int">
+      <type href="VideoStream.ecore#//SearchVideo"/>
+      <constraint>
+        <expression xsi:type="gotten:OCLComplexExpression">
+          <feat xsi:type="ecore:EAttribute" href="VideoStream.ecore#//SearchVideo/orderType"/>
+        </expression>
+      </constraint>
+    </features>
+  </featureDefinitions>
+  <featureDefinitions output="true">
+    <features name="NVideos" dataType="Long"/>
+    <features name="OutputVideoId" dataType="Long"/>
+    <features name="OutputVideoTitle" dataType="String"/>
+  </featureDefinitions>
+  <processors>
+    <entries name="Name" type="String"/>
+    <entries name="Version" type="String"/>
+  </processors>
+  <rules name="MR1">
+    <leftHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.0/@features.0"/>
+      <opType>and</opType>
+      <exp2 xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.0/@features.2"/>
+        <opType>>=</opType>
+        <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.0/@features.2"/>
+      </exp2>
+    </leftHandSide>
+    <rightHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.1/@features.0"/>
+      <opType>>=</opType>
+      <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.1/@features.0"/>
+    </rightHandSide>
+  </rules>
+  <rules name="MR2">
+    <leftHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.0/@features.0"/>
+      <opType>and</opType>
+      <exp2 xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.0/@features.3"/>
+        <opType>&lt;></opType>
+        <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.0/@features.3"/>
+      </exp2>
+    </leftHandSide>
+    <rightHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.1/@features.0"/>
+      <opType>==</opType>
+      <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.1/@features.0"/>
+    </rightHandSide>
+  </rules>
+  <rules name="MR3">
+    <leftHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.0/@features.1"/>
+      <opType>and</opType>
+      <exp2 xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0"/>
+        <opType>==</opType>
+        <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1"/>
+      </exp2>
+    </leftHandSide>
+    <rightHandSide xsi:type="gotten:MetamorphicExpression">
+      <exp1 xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.1/@features.1"/>
+        <opType>&lt;></opType>
+        <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.1/@features.1"/>
+      </exp1>
+      <opType>and</opType>
+      <exp2 xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.0" feature="//@featureDefinitions.1/@features.2"/>
+        <opType>==</opType>
+        <exp2 xsi:type="gotten:AtomicExpression" model="//@definition/@metamodel.0/@instances.1" feature="//@featureDefinitions.1/@features.2"/>
+      </exp2>
+    </rightHandSide>
+  </rules>
+</gotten:GottenEnvironment>

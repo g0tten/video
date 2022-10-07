@@ -1,0 +1,34 @@
+metamodel videostream "/video/model/VideoStream.ecore" with m1, m2
+models "/video/model/videotc" 
+
+videostream input Features {
+  context VideoAPITest def: IsSearch: Boolean = request.oclIsTypeOf(SearchVideo)
+  context VideoAPITest def: IsUpdate: Boolean = request.oclIsTypeOf(UpdateVideo)
+  context SearchVideo def: MaxResults: Int = maxResults
+  context SearchVideo def: SearchOrder: Int = orderType
+}
+
+output Features {
+  NVideos : Long
+  OutputVideoId: Long
+  OutputVideoTitle: String
+}
+
+Processor {
+  Name: String
+  Version: String
+}
+ 
+MetamorphicRelations {
+ MR1 = [ (IsSearch(m1) and (MaxResults(m1) >= MaxResults(m2))) 
+         implies 
+         (NVideos(m1) >= NVideos(m2))]
+         
+ MR2 = [ (IsSearch(m1) and (SearchOrder(m1) <> SearchOrder(m2))) 
+         implies 
+         (NVideos(m1) == NVideos(m2))]
+ MR3 = [ (IsUpdate(m1) and ((m1) == (m2)))
+ 		 implies 
+ 		 ((OutputVideoId(m1) <> OutputVideoId(m2)) and
+ 		 (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
+}
