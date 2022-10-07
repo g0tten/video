@@ -1,5 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<videostream:VideoAPITest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" xsi:schemaLocation="http://videostream/0.1 ../metamodel/VideoStream.ecore" baseURL="https://youtube.googleapis.com/youtube/v3/" testName="Simple Youtube query">
-  <request xsi:type="videostream:SearchVideo" path="search" maxResults="25" query="goats playing"/>
-  <auth name="token" key="AIzaSyCtJ9eGUJ1uxpZ9rasL1a534unQCz7dlKc"/>
-</videostream:VideoAPITest>
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" totalResults="25">
+  <operation xsi:type="videostream:SearchVideo" maxResults="25" query="goats playing"/>
+  <videos Title="Most Funny and Cute Baby Goat Videos Compilation" Description="The most cute and funny baby goat videos. Best goat compilation EVER! Funny baby goats, try not to laugh! Puppies &amp; Babies ..." Id="cEJy2q27hVk"/>
+  <videos Title="Funny Baby Goats Playing Video Compilation" Description="Baby animals are fun to watch, especially baby goats! Watch this compilation video of cute, funny baby goat kids playing, running ..." Id="CShY3z5LVK0"/>
+  <videos Title="Most Funny and Cute Baby Goat Videos Compilation (2018)" Description="Funny baby goats playing and jumping! Baby goats are so cute! Try not to laugh or smile! Puppies &amp; Babies &amp; Kitties OH MY!" Id="uWxH7AwKAR8"/>
+  <videos Title="Ch&#xe8;vres en &#xe9;quilibre - goats balancing on a flexible steel ribbon" Description="Merci beaucoup pour les 10 millions de vue ! To use this video in a commercial player or in broadcasts, please email ..." Id="58-atNakMWw"/>
+  <videos Title="24 Curious goat kids!" Description="The barn gets more fun every morning and now that the kids are used to me, they are very interested every time I get low with my ..." Id="mtOD19C7J48"/>
+  <videos Title="This is why GOATS&amp;amp;SHEEP are the FUNNIEST ANIMALS" Description="Everyone thinks that SHEEP and GOATS can't make us laugh, but guess what? They can make us laugh ALL THE TIME, their ..." Id="g8p22U-5yVA"/>
+  <videos Title="Epic Running of the Goats @Sunflower Farm Creamery" Description="Yahhhoooooo!!!!! To celebrate to end of the 2021 kidding season and the birth of 60 healthy, hopping cuties, we started today with ..." Id="AXtyXEKznUI"/>
+  <videos Title="GOAT Is Beyond Funny And Cute - Funny Goat Videos" Description="This is funny goat videos. You will see goat, funny goat, goat videos, goat fainting, goat scream, goat sounds, goat funny, baby ..." Id="uhD0wFiDJfc"/>
+  <videos Title="Dozens of baby goats - kids - jumping, yelling and playing | HD footage" Description="Goats! We visited a friend with 39 baby goats (called kids) in Emmett, Idaho. I got some shots of them playing around and yelling ..." Id="cVQUaecTlpU"/>
+  <videos Title="Baby and Baby Goats" Description="A toddler is introduced to a couple #cute #baby #goats and doesn't quite know how to handle them. Please share this video and ..." Id="TYuctrgo9UU"/>
+  <videos Title="Baby Goats Playing / Happy little Goat Kids" Description="2022 Nigerian Dwarf Baby goat kids here on the farm. Baby goats are running, jumping and playing. We have two more does to ..." Id="Ovop8DtFPTY"/>
+  <videos Title="Why You Should NOT Play With Your Goats" Description="thegoatguy #packgoats #raisinggoats Listen to Marc Warnke, &quot;The Goat Guy&quot; at Packgoats.com tell us why you shouldn't play with ..." Id="eo3U7YB1oD4"/>
+  <videos Title="Baby Goats Playing and Jumping" Description="This cute baby goat (called a kid) playing by jumping onto a tree stump, launching herself off of it, then running around like a ..." Id="zgL6PsO70a0"/>
+  <videos Title="Baby Goats Playing and Jumping, Funny Baby Goats, Happy Baby Goats&#x2014;Episode 8" Description="Baby Goats Playing and Jumping, Funny Baby Goats, Happy Baby Goats 3 years of baby goat videos coming your way! In 2021 ..." Id="BC294tixkxc"/>
+  <videos Title="Great Pyrenees and Pygmy Goats" Description="For licensing or usage, contact licensing@viralhog.com) Puppy LGD training Pygmy Harbor Farm is in Knoxville, Tennessee USA." Id="WLBBTZcXwX4"/>
+  <videos Title="Baby Pygmy Goats playing" Description="Pygmy Harbor Farm is in Knoxville, Tennessee USA. We raise registered Pygmy Goats and AKC Great Pyrenees. We also have ..." Id="D9aXZnXZ19Q"/>
+  <videos Title="CUTE BABY GOATS | Funny Newborn Goats" Description="Life on a farm is always full of cute animals playing around. And baby goats are the cutest little jumping things you can find." Id="13994xQjZgU"/>
+  <videos Title="Goats Playing on Slide" Description="" Id="SOqnk7FiaY8"/>
+  <videos Title="Baby Goats Playing and Jumping!" Description="New born baby goats having fun." Id="RzN2_38VIwQ"/>
+  <videos Title="SHEEP &amp;amp; GOATS can be SUPER FUNNY, SEE FOR YOURSELF! - Funny ANIMAL compilation" Description="Super funny sheep and goat videos that will make you laugh extremely hard! This compilation is the most impossible try not to ..." Id="Cm_OTNAjWvg"/>
+  <videos Title="Nigerian Dwarf baby goats playing on a slide!" Description="Meet some of the Nigerian Dwarf Goats at Goat Milk Stuff. These kids love playing around on all their toys! Whether it is logs, ..." Id="zdM2vB5_o0k"/>
+  <videos Title="Greatest Baby Goat Jumping and Parkour Compilation!" Description="Hilariously cute baby goats going about their day jumping around, jumping on other animals and doing some extreme parkour!" Id="zLN_eewoD4s"/>
+  <videos Title="Goats Playing and Having Fun" Description="thegoatguy #goatsplaying #packgoats Marc Warnke, &quot;The Goat Guy&quot;, of PackGoats.com shares his Goats playing and having fun!" Id="2AWAqjlLJWQ"/>
+  <videos Title="Baby Goats Gone Wild (with slow motion interlude!)" Description="Our mini Nubians Sweet Pea and Thistle are next to kid, but after watching playtime this morning, it looked like both were ..." Id="RLrpFO1oHSQ"/>
+  <videos Title="Baby and baby goats,goat video for kids" Description="Baby and baby goats,goat video for kids Thanks for watching video my channel #kids_videos." Id="hIZ3bb3uGKA"/>
+</videostream:OperationResult>

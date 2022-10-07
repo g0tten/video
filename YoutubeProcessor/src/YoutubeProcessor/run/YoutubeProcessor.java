@@ -157,7 +157,7 @@ public class YoutubeProcessor extends Processor {
 	@Override
 	public int execute(List<Resource> models) {
 		
-		String modelName, mtcSimpleName, mtcName;
+		String modelName, tcSimpleName, tcName;
 		System.out.println("execute - Init");
 		
 		String[] args = new String[4];
@@ -167,15 +167,12 @@ public class YoutubeProcessor extends Processor {
 			System.out.println("> "+args[1]);
 			try {
 				modelName = getModelName(model);
-				System.out.println("MODELNAME: " + modelName);
 				
-				mtcSimpleName = modelName.substring(modelName.lastIndexOf(File.separator) + 1, modelName.length());
-				System.out.println("MTCSIMPLENAME1: " + mtcSimpleName);
-				mtcSimpleName = mtcSimpleName.replace("input_", "tc_").replace("followup_", "tc_").replace("workload_", "tc_").replace(".model", ".mtc");
-				System.out.println("MTCSIMPLENAME2: " + mtcSimpleName);
-				mtcName = modelName.substring(0, modelName.lastIndexOf(File.separator) + 1) + mtcSimpleName;
+				tcSimpleName = modelName.substring(modelName.lastIndexOf(File.separator) + 1, modelName.length());
+				tcSimpleName = tcSimpleName.replace("input_", "tc_").replace("followup_", "tc_").replace("workload_", "tc_").replace(".model", ".tc");
+				tcName = modelName.substring(0, modelName.lastIndexOf(File.separator) + 1) + tcSimpleName;
 				
-				System.out.println("MetaTC name:"+mtcName);
+				System.out.println("MetaTC name:"+tcName);
 				
 				//TODO: [PabloC]: Pablo, aqui hay que quitar esta parte de prueba y enlazarlo correctamente.
 				//Abrimos el MetaTC
@@ -191,7 +188,7 @@ public class YoutubeProcessor extends Processor {
 				args[2] = "C:/eclipse/workspace7/REST_Gotten/models/VideoAPITest_t1.xmi";
 				//args[2] = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/results/test.xmi";
 				//args[3] = "C:/eclipse/workspace7/REST_Gotten/results/test.xmi";
-				args[3] = PROJECT_PATH + File.separator + "tc" + File.separator + this.getID() + File.separator + mtcName;
+				args[3] = PROJECT_PATH + File.separator + "tc" + File.separator + this.getID() + File.separator + tcName;
 				VideoStreamExecutor.main(args);
 				
 				System.out.println(ModelManager.getWorkspaceAbsolutePath()+File.separatorChar+"sample.gotten"+File.separatorChar+"tc"+File.separatorChar+getID()+File.separatorChar);
@@ -220,7 +217,6 @@ public class YoutubeProcessor extends Processor {
 		try
 		{
 			modelURI = model.getURI().toFileString();
-			System.out.println("MODELURI: " + modelURI);
 			nModelURILen = modelURI.length();
 			fileSeparator = File.separator + "model" + File.separator;
 			nPathSeparatorLen = (File.pathSeparator + "model" + File.separator).length();

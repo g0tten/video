@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: VimeoProcessor
+Bundle-SymbolicName: VimeoProcessor; singleton:=true
+Bundle-Version: 1.0.0
+Require-Bundle:  org.eclipse.emf.ecore,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ org.eclipse.core.resources,
+ gotten.processor,
+ gotten.utils
