@@ -46,9 +46,9 @@ MetamorphicRelations {
          implies 
          (NVideos(m1) == NVideos(m2))]
  MR3 = [ (IsUpdate(m1) and ((m1) == (m2)))
- 	       implies 
- 	       ((OutputVideoId(m1) <> OutputVideoId(m2)) and
- 	       (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
+         implies 
+         ((OutputVideoId(m1) <> OutputVideoId(m2)) and
+         (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
 }
 ```
 
