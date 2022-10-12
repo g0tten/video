@@ -58,9 +58,9 @@ Below we provide a brief description of these 3 MRs for video streaming APIs:
 
 Relation | Description |
 --- | :--- | 
-MR1 | The search m1 requests a maximum number of videos greater than the search m2. |
+MR1 | The maximum number of videos requested by the search m1 is greater than or equals to the maximum number of videos requested by the search m2. |
 &nbsp; | MR1i = [ (IsSearch(m1) and (MaxResults(m1) >= MaxResults(m2))) ] |
-&nbsp; | The number of videos returned by the search m1 should be greater or equal to the number of videos returned by the search m2. |
+&nbsp; | The number of videos returned by the search m1 should be greater than or equal to the number of videos returned by the search m2. |
 &nbsp; | MR1o = [ (NVideos(m1) >= NVideos(m2))] |
 MR2 | The search order of m1 is different to the search order of m2. |
 &nbsp; | MR2i = [ (IsSearch(m1) and (SearchOrder(m1) <> SearchOrder(m2)))  ] |
