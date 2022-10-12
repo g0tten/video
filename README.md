@@ -69,8 +69,8 @@ MR2 | The search order of m1 is different to the search order of m2. |
 MR3 | The update m1 is equal to the update m2. |
 &nbsp; | MR3i = [ (IsUpdate(m1) and ((m1) == (m2)) ] |
 &nbsp; | The the video id returned by m1 should be different to the video id returned by m2. The video title returned by m1 should be equal to the video title returned by m2. |
-&nbsp; | MR3o = [ ((OutputVideoId(m1) <> OutputVideoId(m2)) |
-^^ &nbsp; |^^        and (OutputVideoTitle(m1) == OutputVideoTitle(m2))) ] |
+&nbsp; | MR3o = [ ((OutputVideoId(m1) <> OutputVideoId(m2)) <br />
+         and (OutputVideoTitle(m1) == OutputVideoTitle(m2))) ] |
 
 ### Gotten for YouTube and Vimeo project download link
 
