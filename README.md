@@ -46,15 +46,15 @@ MetamorphicRelations {
          implies 
          (NVideos(m1) == NVideos(m2))]
  MR3 = [ (IsUpdate(m1) and ((m1) == (m2)))
- 		     implies 
- 		     ((OutputVideoId(m1) <> OutputVideoId(m2)) and
- 		     (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
+ 	       implies 
+ 	       ((OutputVideoId(m1) <> OutputVideoId(m2)) and
+ 	       (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
 }
 ```
 
 ### MRs for video streaming APIs brief description
 
-Below we provide a brief description of these 3 MR for video streaming APIs:
+Below we provide a brief description of these 3 MRs for video streaming APIs:
 
 Relation | Description |
 --- | :--- | 
