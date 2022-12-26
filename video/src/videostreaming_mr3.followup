@@ -1,0 +1,9 @@
+followups for videostream using MR3
+with source path = "/video/model/videotc"
+and output folder = "/video/model/videotc"
+
+-> keeping { m1 == m2 }
+
+maxSolutions 3
+iterations 1
+algorithms [Random, NSGAII, NSGAIII, eMOEA]

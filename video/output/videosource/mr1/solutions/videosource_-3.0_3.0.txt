@@ -1,0 +1,19 @@
+Number of variables: 3
+  Variable[0]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@1a1a0012 (path: search) (maxResults: 197, resultsPerPage: 0, orderType: NONE, duration: 0, query: world cup)
+
+  Variable[1]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@1a1a0012 (path: search) (maxResults: 197, resultsPerPage: 0, orderType: NONE, duration: 0, query: world cup)
+
+  Variable[2]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@1a1a0012 (path: search) (maxResults: 197, resultsPerPage: 0, orderType: NONE, duration: 0, query: world cup)
+
+Number of attributes: 4
+  AggregatedFitness: 0.0
+  rank: 0
+  Normalized Objectives: [0.0, 1.0]
+  crowdingDistance: Infinity
+Number of objectives: 2
+  FirstObjective: -3.0
+  SolutionLength: 3.0
+Number of constraints: 0

@@ -1,0 +1,16 @@
+Number of variables: 3
+  Variable[0]: Match for rule 'decMaxResults':
+
+  Variable[1]: Match for rule 'decMaxResults':
+
+  Variable[2]: -Placeholder-
+
+Number of attributes: 4
+  AggregatedFitness: 0.0
+  rank: 0
+  Normalized Objectives: [0.3333333333333333, 0.6666666666666666]
+  crowdingDistance: 1.3333333333333333
+Number of objectives: 2
+  FirstObjective: -2.0
+  SolutionLength: 2.0
+Number of constraints: 0

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/video/src" modelPluginID="video" modelName="VideoStream"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>VideoStream.ecore</foreignModel>
+  <genPackages prefix="VideoStreamAPITest" disposableProviderFactory="true" ecorePackage="VideoStream.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="VideoStream.ecore#//Order">
+      <genEnumLiterals ecoreEnumLiteral="VideoStream.ecore#//Order/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="VideoStream.ecore#//Order/RATING"/>
+      <genEnumLiterals ecoreEnumLiteral="VideoStream.ecore#//Order/PLAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="VideoStream.ecore#//Order/DATE"/>
+    </genEnums>
+    <genClasses ecoreClass="VideoStream.ecore#//VideoAPITest">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference VideoStream.ecore#//VideoAPITest/request"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoAPITest/baseURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoAPITest/testName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference VideoStream.ecore#//VideoAPITest/auth"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//APIAuth">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//APIAuth/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//APIAuth/key"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="VideoStream.ecore#//VideoOperation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoOperation/path"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//UploadVideo">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference VideoStream.ecore#//UploadVideo/video"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//UploadVideo/localPath"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//Video">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//Video/Title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//Video/Description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//Video/Id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference VideoStream.ecore#//Video/statistics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//Video/tags"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//UpdateVideo">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference VideoStream.ecore#//UpdateVideo/video"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//SearchVideo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//SearchVideo/maxResults"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//SearchVideo/resultsPerPage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//SearchVideo/orderType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//SearchVideo/duration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//SearchVideo/query"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//VideoStatistics">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoStatistics/viewCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoStatistics/likeCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoStatistics/favoriteCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//VideoStatistics/commentCount"/>
+    </genClasses>
+    <genClasses ecoreClass="VideoStream.ecore#//OperationResult">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute VideoStream.ecore#//OperationResult/totalResults"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference VideoStream.ecore#//OperationResult/operation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference VideoStream.ecore#//OperationResult/videos"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

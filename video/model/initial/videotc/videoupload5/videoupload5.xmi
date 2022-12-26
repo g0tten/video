@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videostream:VideoAPITest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" xsi:schemaLocation="http://videostream/0.1 ../VideoStream.ecore" baseURL="https://youtube.googleapis.com/youtube/v3/" testName="Simple Youtube query">
+  <request xsi:type="videostream:UploadVideo" path="C:/eclipse/runtime-EclipseApplication8/video/video/systematic_engineering_JOT_2020_R1.mp4" localPath="C:/eclipse/runtime-EclipseApplication8/video/video/systematic_engineering_JOT_2020_R1.mp4">
+    <video Title="Wodel Mutation Operators Engineering - JOT 2020" Description="Wodel Mutation Operators Engineering - JOT 2020" Id=""/>
+  </request>
+  <auth name="token" key="AIzaSyATE_DybvLwY4rh5RRtHoBlolNW5BoQvOY"/>
+</videostream:VideoAPITest>

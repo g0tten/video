@@ -1,0 +1,81 @@
+Population with 4 solution(s):
+
+------------------
+Solution 1/4
+------------------
+Number of variables: 3
+  Variable[0]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 22, resultsPerPage: 0, orderType: NONE, duration: 0, query: Di Maria)
+
+  Variable[1]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 22, resultsPerPage: 0, orderType: NONE, duration: 0, query: Di Maria)
+
+  Variable[2]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 22, resultsPerPage: 0, orderType: NONE, duration: 0, query: Di Maria)
+
+Number of attributes: 1
+  AggregatedFitness: 0.0
+Number of objectives: 2
+  FirstObjective: -3.0
+  SolutionLength: 3.0
+Number of constraints: 0
+
+------------------
+Solution 2/4
+------------------
+Number of variables: 3
+  Variable[0]: -Placeholder-
+
+  Variable[1]: Match for rule 'decMaxResults':
+
+  Variable[2]: Match for rule 'decMaxResults':
+
+Number of attributes: 4
+  AggregatedFitness: 0.0
+  rank: 0
+  Normalized Objectives: [0.3333333333333333, 0.6666666666666666]
+  crowdingDistance: 1.3333333333333333
+Number of objectives: 2
+  FirstObjective: -2.0
+  SolutionLength: 2.0
+Number of constraints: 0
+
+------------------
+Solution 3/4
+------------------
+Number of variables: 3
+  Variable[0]: -Placeholder-
+
+  Variable[1]: -Placeholder-
+
+  Variable[2]: -Placeholder-
+
+Number of attributes: 4
+  AggregatedFitness: 0.0
+  rank: 0
+  Normalized Objectives: [1.0, 0.0]
+  crowdingDistance: Infinity
+Number of objectives: 2
+  FirstObjective: -0.0
+  SolutionLength: 0.0
+Number of constraints: 0
+
+------------------
+Solution 4/4
+------------------
+Number of variables: 3
+  Variable[0]: Match for rule 'decMaxResults':
+
+  Variable[1]: -Placeholder-
+
+  Variable[2]: -Placeholder-
+
+Number of attributes: 4
+  AggregatedFitness: 0.0
+  rank: 0
+  Normalized Objectives: [0.6666666666666666, 0.3333333333333333]
+  crowdingDistance: 1.3333333333333333
+Number of objectives: 2
+  FirstObjective: -1.0
+  SolutionLength: 1.0
+Number of constraints: 0

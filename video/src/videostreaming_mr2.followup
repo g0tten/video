@@ -1,0 +1,11 @@
+followups for videostream using MR2
+with source path = "/video/model/videotc"
+and output folder = "/video/model/videotc"
+
+SearchOrder -> SearchVideo.orderType <> NONE
+
+maximize (SearchOrder(m2) - SearchOrder(m1))
+
+maxSolutions 3
+iterations 1
+algorithms [Random, NSGAII, NSGAIII, eMOEA]

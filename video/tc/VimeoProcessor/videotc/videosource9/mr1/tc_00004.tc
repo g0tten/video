@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" totalResults="25">
+  <operation xsi:type="videostream:SearchVideo" maxResults="197" query="brawlstars"/>
+  <videos Title="Brawlstars Reel 2021" Description="Fun win and lose animation I did for Brawlstars from few months ago." Id="3590fb3e9f0de5bc0beb0e2b07bfc85d5ff6c08e"/>
+  <videos Title="Brawlstars Reel" Description="Few animations I did for supercell" Id="73a699396746cc7212c410e4d7794180d79a2699"/>
+  <videos Title="BRAWLSTARS" Description="" Id="7b251f85c82ff7781ef77a0cc25bbce5babd5e6e"/>
+  <videos Title="Brawlstars - Supercell" Description="Providing in-game animation for many of the brawlers in the game. Responsible for animation only." Id="d585c4a6f7cafa5441fd210b877273a2077cacea"/>
+  <videos Title="Supercell - Brawlstars Q1 2020" Description="Providing in-game animation for many of the brawlers in the game. Responsible for animation only." Id="b568890c8342ce8bafbd15cac858a8c228df43dd"/>
+  <videos Title="BrawlStars" Description="Created at Psyop.  My role was lighting, focusing primarily on the graveyard shots.  I also helped with lighting and setup tweaks on various other shots." Id="9f87ff3be8f6c9d2ad74e8346bc7c1fc76f064e5"/>
+  <videos Title="BLACKLIST Golden Wolf - Brawlstars &quot;Welcome to Retropolis&quot;" Description="See more Golden Wolf work: http://www.psyop.com/creators/blacklist-golden-wolf&#xA;&#xA;Follow @Blacklisttv on Instagram, Facebook and Twitter for new updates, witty captions and clever content: &#xA;Instagram: https://www.instagram.com/blacklisttv/&#xA;Facebook: https://www.facebook.com/blacklisttv/&#xA;Twitter: https://twitter.com/blacklisttv" Id="7730ad3ec4c3f8aac51cad23c8c15e637f9fb62d"/>
+  <videos Title="BrawlStars - Spike" Description="" Id="58bb4a956c8075c420d9bbd488c38b13dc843d03"/>
+  <videos Title="Supercell_Brawlstars_DanAndJason_Hornet.mp4" Description="" Id="ed6ae4061653ae690af201fb4c7faa3e6d385f08"/>
+  <videos Title="BrawlStars - Primo" Description="" Id="70b7d5bffdc285202574feb72eef385e84ae508d"/>
+  <videos Title="BrawlStars - Dynomike" Description="" Id="164baf32c59ef05395002030f2567920ece0b373"/>
+  <videos Title="Colt's unlucky moment | Brawlstars funny | Brawlstars" Description="For more content follow Instagram page @Brawlstars_pro_moments" Id="6d7dfac99536218937c6850a167c469117c5613a"/>
+  <videos Title="SUPERCELL: BRAWLSTARS X KARTIK AARYAN" Description="Director: Achowe" Id="7c75982d26b548f66bc9daa923c28bc14ab5b3f8"/>
+  <videos Title="Brawlstars" Description="Mein 1.Brawlstarsviedio &#xA;&#xA;Viel Spass beim zuschauen !  &#xA;&#xA;Der Link zu meinem club ist:&#xA;&#xA; https://link.brawlstars.com/invite/band/de?tag=28YGU2U2V&amp;token=k2wnb47w&#xA;&#xA;Discord&#xA;&#xA;Brawlstarserver:https://discord.gg/e7TmUweHzT&#xA;&#xA;Mein Server :https://discord.gg/pWrGkpK8BX" Id="fa67125a5dbd6159fd0815c57a738c0b961b2b8b"/>
+  <videos Title="Brawlstars - Global Launch Case Study" Description="" Id="d8b05004e3a33d188c4dca5aed76ac1b75191a9f"/>
+  <videos Title="Mein ERSTES Video! - BrawlStars - Deutsch" Description="Hey Leute! Das hier ist mein erstes Video auf Vilmeo! Lasst gerne ein Like und ein Follow f&#xfc;r mehr Gaming-Content da!" Id="27a78e5c2db1ff2d2e79e041a20d980d3a865a6a"/>
+  <videos Title="brawlstars" Description="" Id="a42ec458955a6a28beb88c09e1ae9988df2836f1"/>
+  <videos Title="BRAWLSTARS!" Description="UwU" Id="cb4f9adc123b7283db247495980f4949fe5d8fe7"/>
+  <videos Title="BRAWLSTARS" Description="" Id="3f383f21440771276023eb704306010ce83df60e"/>
+  <videos Title="brawlstars" Description="" Id="cb4da8af484a69985d09dc553d3b604f1c749adf"/>
+  <videos Title="BrawlStars_Promo" Description="" Id="f031f146ee2654b8598a1c03aa48952254b0d84e"/>
+  <videos Title="BrawlStars - Mortissed" Description="" Id="1be83964d531cbba7b07e3287f8b1dd1b6d926e1"/>
+  <videos Title="BrawlStars - Colt" Description="" Id="540349d616f7b0cbde7e0038f8af582889267ffa"/>
+  <videos Title="BrawlStars" Description="" Id="d8a3e6bda3b1fe14e674ce419ab5d7981148e6e1"/>
+  <videos Title="Alec Brawlstars Review" Description="SORRY FOR SNIFFLING DURING THIS VIDEO,  I KNOW ITS DISGUSTING" Id="1e42c2a63d82888f4b8f828dbd76eb46bc3a2289"/>
+</videostream:OperationResult>

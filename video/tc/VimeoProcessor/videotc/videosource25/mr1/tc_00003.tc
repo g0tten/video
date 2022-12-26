@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" totalResults="25">
+  <operation xsi:type="videostream:SearchVideo" maxResults="73" query="CSGO"/>
+  <videos Title="Wb \\ CSGO" Description="" Id="f57b6b4ae4c40192f8a56b8cc5477c72416a3958"/>
+  <videos Title="Ohhhhh SH1T! #CSGO" Description="Ohhhhh SH1T! #CSGO" Id="6ee236d822925da6230fe7be75eb98a731dd292c"/>
+  <videos Title="Xapekgames - FragMovie #CSGO" Description="Xapekgames - FragMovie #CSGO" Id="d9b3e32e4b10961b99e9c68cf22932c4464c10f7"/>
+  <videos Title="OUTRAGEOUS #CSGO" Description="OUTRAGEOUS #CSGO" Id="dd6239ea337dbe19b63b70b9a2b72eda3da7285c"/>
+  <videos Title="OTL CSGO Gambling" Description="ESPN:  Outside the Lines.  Popular e-game Counter-Strike: Global Offensive (CSGO) has spawned an under-the-radar betting economy that's luring underage gamers and costing them - and sometimes their parents - thousands of dollars." Id="8f689412bc060bcadf00cf315c09e761a3c26e2e"/>
+  <videos Title="LOGIC #CSGO" Description="LOGIC #CSGO" Id="5c6778052099f8fc74d4e2f05692880a1f99f521"/>
+  <videos Title="MAKING OF MEDIA DAY CSGO" Description="Media day de la Orange Unity League CSGO" Id="85e4e275b3b6b48fe837d918d8d640465816cc5e"/>
+  <videos Title="csgo" Description="" Id="4fd2f04010064ae2731f1814d6ff6ee60878360e"/>
+  <videos Title="War Never Changes... [SFM] #CSGO" Description="War Never Changes... [SFM] #CSGO" Id="4192191fc83c79484e0136d813c39b2da6e09ee9"/>
+  <videos Title="csgo frag" Description="" Id="d78f8d7cd045f4f4a4469439912cd54218ddc005"/>
+  <videos Title="CSGO Montage" Description="" Id="7d082908361306b20b8671555e18a67a0bbc895a"/>
+  <videos Title="csgo" Description="CSGO" Id="600bbc2a44f01d715a4501dc90cd7b91733a1b23"/>
+  <videos Title="csgo" Description="csgo" Id="9748b057f3da1508514fdfa2aa111a6c06477b71"/>
+  <videos Title="csgo" Description="Our csgo cheat!" Id="46a33b13e6c85bfc4a958654c7a40343f0629f77"/>
+  <videos Title="CSGO" Description="o melhor jogador de csgo do brazil." Id="843b1a9b570b948937110ca6fd7fb9f42c7e0f23"/>
+  <videos Title="CSGO_2" Description="This video is about csgo" Id="b804e18ce96d3613f2db2453ccfd11feae075c39"/>
+  <videos Title="csgo accounts" Description="Read more about csgo accounts :http://www.csgo-accounts.com/" Id="6e896e328543914ba2c7b8ac0f195d88ff92d578"/>
+  <videos Title="Fraguri CSGO" Description="CSGO" Id="b1f83c144a3b6e57eccaf4bf23f380043cd87ee1"/>
+  <videos Title="CSGO rickross" Description="CSGO rickross" Id="7942d43d885fde162dfc83893ab3a1e9ed7db17f"/>
+  <videos Title="Clean? #csgo" Description="clean? #csgo" Id="3563872b6f3f0eb08e54535d2613622acd309464"/>
+  <videos Title="WITNESS #CSGO" Description="WITNESS #CSGO" Id="6a946ecdb7ac16cee6120325897b9cbd6d673e73"/>
+  <videos Title="UNIQUE #CSGO" Description="UNIQUE #CSGO" Id="f7432fdcfdb763203452dad4a14311e0c1f64988"/>
+  <videos Title="UNDESERVED #CSGO" Description="UNDESERVED #CSGO" Id="ae80900c1b4787718279cbb5ad8a412572d7ff5d"/>
+  <videos Title="SEVENTEEN #CSGO" Description="SEVENTEEN #CSGO" Id="a1c5bfdb995dac2daff955b82c036fcb4c287e02"/>
+  <videos Title="Overthrown #CSGO" Description="Overthrown #CSGO" Id="89dbfa1416acb9a87d24552564f1f012ba83f570"/>
+</videostream:OperationResult>

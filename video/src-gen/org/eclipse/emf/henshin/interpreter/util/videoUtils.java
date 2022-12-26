@@ -16,4 +16,18 @@ public class videoUtils {
 		}
 		return value;
 	}
+
+	public static String getRandomString(String... array) {
+		int min = 0;
+		int max = array.length;
+		int diff = max - min;
+		if (diff <= 1) {
+			return array[0];
+		}
+		int value = rn.nextInt() % diff;
+		if (value < 0) {
+			value = value * (-1);
+		}
+		return array[value];
+	}
 }

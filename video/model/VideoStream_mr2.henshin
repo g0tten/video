@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" name="videostream">
+  <imports href="http://videostream/0.1#/"/>
+  <units xsi:type="henshin:Rule" name="distinctOrderType">
+    <parameters name="x">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs name="Lhs">
+      <nodes>
+        <type href="http://videostream/0.1#//SearchVideo"/>
+        <attributes value="x">
+          <type href="http://videostream/0.1#//SearchVideo/orderType"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs name="Rhs">
+      <nodes>
+        <type href="http://videostream/0.1#//SearchVideo"/>
+        <attributes value="videoUtils.getRandomString(&quot;RATING&quot;,&quot;PLAYS&quot;,&quot;DATE&quot;)">
+          <type href="http://videostream/0.1#//SearchVideo/orderType"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings origin="//@units.0/@lhs/@nodes.0" image="//@units.0/@rhs/@nodes.0"/>
+    <javaImports>org.eclipse.emf.henshin.interpreter.util.videoUtils</javaImports>
+  </units>
+</henshin:Module>

@@ -1,0 +1,40 @@
+Population with 2 solution(s):
+
+------------------
+Solution 1/2
+------------------
+Number of variables: 3
+  Variable[0]: Match for rule 'distinctOrderType':
+- parameter 'x' => NONE
+
+  Variable[1]: -Placeholder-
+
+  Variable[2]: -Placeholder-
+
+Number of attributes: 3
+  AggregatedFitness: -1.0
+  rank: 0
+  crowdingDistance: Infinity
+Number of objectives: 2
+  FirstObjective: -2.0
+  SolutionLength: 1.0
+Number of constraints: 0
+
+------------------
+Solution 2/2
+------------------
+Number of variables: 3
+  Variable[0]: -Placeholder-
+
+  Variable[1]: -Placeholder-
+
+  Variable[2]: -Placeholder-
+
+Number of attributes: 3
+  AggregatedFitness: 0.0
+  rank: 0
+  crowdingDistance: Infinity
+Number of objectives: 2
+  FirstObjective: -0.0
+  SolutionLength: 0.0
+Number of constraints: 0

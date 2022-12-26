@@ -55,7 +55,7 @@ public class VimeoProcessor extends Processor {
 				System.out.println("===============================================>");
 				//metamodelPath = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/metamodel/VideoStream.ecore";
 				//metamodelPath = "C:/eclipse/runtime-EclipseApplication6/video/model/VideoStream.ecore";
-				String metamodelPath = "C:/eclipse/runtime-EclipseApplication6/video/model/VideoStream.ecore";
+				String metamodelPath = "C:/eclipse/runtime-EclipseApplication8/video/model/VideoStream.ecore";
 				List<EPackage> packages = ModelManager.loadMetaModelNoException(metamodelPath);
 
 				if (packages != null && outputFile.exists() == true) { 
@@ -184,9 +184,10 @@ public class VimeoProcessor extends Processor {
 				System.out.println("Executing the videostreaming processor");
 				//args[0] = ModelManager.getWorkspaceAbsolutePath() + "/" + this.getID();
 				//args[0] = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/metamodel/VideoStream.ecore";
-				args[0] = "C:/eclipse/runtime-EclipseApplication6/video/model/VideoStream.ecore";
+				args[0] = "C:/eclipse/runtime-EclipseApplication8/video/model/VideoStream.ecore";
 				//args[1] = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/models/VideoAPITest_t1.xmi";
-				args[1] = "C:/eclipse/workspace7/REST_Gotten/models/VideoAPITest_t1.xmi";
+				//args[1] = "C:/eclipse/workspace7/REST_Gotten/models/VideoAPITest_t1.xmi";
+				args[1] = model.getURI().toFileString();
 				//args[2] = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/results/test.xmi";
 				//args[3] = "C:/eclipse/workspace7/REST_Gotten/results/test.xmi";
 				args[2] = PROJECT_PATH + File.separator + "tc" + File.separator + this.getID() + File.separator + tcName;

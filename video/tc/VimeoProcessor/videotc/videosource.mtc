@@ -1,9 +1,0 @@
-Id: 1
-MutantId: 0
-GroupId: 0
-InputSrc: /home/j0hn/eclipse/runtime-gotten3/video/tc/VimeoProcessor/videotc/videosource.tc
-OutputSrc: /home/j0hn/eclipse/runtime-gotten3/video/tc/VimeoProcessor/videotc/videosource.tc
-ExecCommands: 
-isSourceTC: false
-followUpChilds: #0##
-Description: MetaTC automatically created by YT-processor by gotten

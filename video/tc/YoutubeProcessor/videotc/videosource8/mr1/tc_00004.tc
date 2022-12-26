@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" totalResults="22">
+  <operation xsi:type="videostream:SearchVideo" maxResults="22" query="Ibai"/>
+  <videos Title="Charlando Tranquilamente #29 con LUIS ENRIQUE" Description="Sigue el podcast tambi&#xe9;n en: Spotify: https://spoti.fi/2YQ7DOA Apple Podcasts: https://apple.co/371gilF iVoox: ..." Id="HtyE9P9VbSc"/>
+  <videos Title="DOY 300&#x20ac; AL QUE M&#xc1;S ME HAGA RE&#xcd;R | SI TE R&#xcd;ES PIERDES 19" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="Hkgu18Y25yo"/>
+  <videos Title="&amp;quot;ESTOY SATISFECHO CON MI TRABAJO EN LA SELECCION&amp;quot; Charlando con Luis Enrique" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="BKFGtloD7pA"/>
+  <videos Title="HE CONSTRUIDO UN GIMNASIO EN MI CASA | MI CAMBIO F&#xcd;SICO #1" Description="Gracias a Valen por ayudarme a ponerme mamado: https://www.instagram.com/valen__pt/ Extra&#xed;do de mi canal de TWITCH: ..." Id="nT6TnuzC9kk"/>
+  <videos Title="El &#xda;ltimo en Salir del Cuadrado Gana $30,000" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="Wnqbhm0hYc8"/>
+  <videos Title="DOY 300&#x20ac; AL QUE M&#xc1;S ME HAGA RE&#xcd;R | SI TE R&#xcd;ES PIERDES 18" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="cSrkM3Nc6oM"/>
+  <videos Title="MI PRIMERA VEZ EN AMONG US VR" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="aTbJOXcjj5g"/>
+  <videos Title="Comiendo en el restaurante M&#xc1;S FAMOSO del MUNDO - SALT BAE NUEVA YORK" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="S0quc0QLomI"/>
+  <videos Title="DOY 5 SUBS POR CADA RISA | SI TE R&#xcd;ES PIERDES 17" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="zDvnVpnp724"/>
+  <videos Title="MI CAMBIO F&#xcd;SICO EMPIEZA HOY" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="NvfvZEmB_JU"/>
+  <videos Title="DOY 300&#x20ac; AL QUE M&#xc1;S ME HAGA RE&#xcd;R | SI TE R&#xcd;ES PIERDES 15" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="0RVQNnZtfFw"/>
+  <videos Title="ARGENTINA CAMPEONA DEL MUNDO" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="sqsJQ_P1H3s"/>
+  <videos Title="Mis Votos Para Los ESLAND 2023" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="JmdDL6T6fo0"/>
+  <videos Title="DON LIONEL ANDR&#xc9;S MESSI" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="3iO-a1QNNkE"/>
+  <videos Title="I-B-A-I - Ibai Ft. FMK (Lyric video) Prod. Big One" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="n66zQBqwI9A"/>
+  <videos Title="LUIS ENRIQUE SE HACE STREAMER" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="RxYhsXELeHU"/>
+  <videos Title="REACCIONANDO a BIZARRAP Music Sessions #50 | DUKI" Description="tema original: https://www.youtube.com/watch?v=Gzs60iBgd3E Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI ..." Id="rZ4X0Nqrn4w"/>
+  <videos Title="El Real Madrid Me Manda Una Caja Misteriosa" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="XzXNZNgcDGY"/>
+  <videos Title="Sirve Pavo Caducado A Su Familia Para Ahorrar - Taca&#xf1;os Extremos" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="mLugHXPiqN0"/>
+  <videos Title="Probando La Mejor Pizza De Nueva York" Description="Extra&#xed;do de mi canal de TWITCH: https://www.twitch.tv/ibai/ MI PODCAST: ..." Id="xtMGbOzucdo"/>
+  <videos Title="REACCIONANDO A &amp;#39;&amp;#39;EL BARRIO M&#xc1;S POBRE DE ESPA&#xd1;A | LAS 3000 VIVIENDAS&amp;#39;&amp;#39; - ZAZZA" Description="canal zazza : https://www.youtube.com/channel/UCwXh0iKPlI4hXNntPECFSbg v&#xed;deo original: ..." Id="RCKeZrBKDTY"/>
+  <videos Title="&#x1f635; IBAI CHARLANDO CON LUIS ENRIQUE &#x1f635;" Description="IBAI CHARLANDO CON LUIS ENRIQUE." Id="5KX0I6lqSXM"/>
+</videostream:OperationResult>

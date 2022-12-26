@@ -1,0 +1,16 @@
+Number of variables: 3
+  Variable[0]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 97, resultsPerPage: 0, orderType: NONE, duration: 0, query: gamergy)
+
+  Variable[1]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 97, resultsPerPage: 0, orderType: NONE, duration: 0, query: gamergy)
+
+  Variable[2]: Match for rule 'decMaxResults':
+- node #1 => videostream.impl.SearchVideoImpl@172b013 (path: search) (maxResults: 97, resultsPerPage: 0, orderType: NONE, duration: 0, query: gamergy)
+
+Number of attributes: 1
+  AggregatedFitness: 0.0
+Number of objectives: 2
+  FirstObjective: -3.0
+  SolutionLength: 3.0
+Number of constraints: 0

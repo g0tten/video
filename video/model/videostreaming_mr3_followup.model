@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:followup="http://followup/1.0" xmlns:gotten="http://gotten/1.0">
+  <gotten:GottenEnvironment>
+    <definition>
+      <metamodel name="videostream" metamodel="/video/model/VideoStream.ecore">
+        <instances name="m1"/>
+        <instances name="m2"/>
+        <model model="/video/model/videotc"/>
+      </metamodel>
+    </definition>
+    <featureDefinitions input="true">
+      <metamodel href="../bin/videostreaming.gotten#//@definition/@metamodel.0"/>
+      <features name="IsSearch">
+        <type href="VideoStream.ecore#//VideoAPITest"/>
+        <constraint>
+          <expression xsi:type="gotten:OCLComplexExpression" basicOperator="oclIsTypeOf">
+            <feat xsi:type="ecore:EReference" href="VideoStream.ecore#//VideoAPITest/request"/>
+            <oclOperation>
+              <feat>
+                <feat1 href="VideoStream.ecore#//SearchVideo"/>
+              </feat>
+            </oclOperation>
+          </expression>
+        </constraint>
+      </features>
+      <features name="IsUpdate">
+        <type href="VideoStream.ecore#//VideoAPITest"/>
+        <constraint>
+          <expression xsi:type="gotten:OCLComplexExpression" basicOperator="oclIsTypeOf">
+            <feat xsi:type="ecore:EReference" href="VideoStream.ecore#//VideoAPITest/request"/>
+            <oclOperation>
+              <feat>
+                <feat1 href="VideoStream.ecore#//UpdateVideo"/>
+              </feat>
+            </oclOperation>
+          </expression>
+        </constraint>
+      </features>
+      <features name="MaxResults" dataType="Int">
+        <type href="VideoStream.ecore#//SearchVideo"/>
+        <constraint>
+          <expression xsi:type="gotten:OCLComplexExpression">
+            <feat xsi:type="ecore:EAttribute" href="VideoStream.ecore#//SearchVideo/maxResults"/>
+          </expression>
+        </constraint>
+      </features>
+      <features name="SearchOrder" dataType="Int">
+        <type href="VideoStream.ecore#//SearchVideo"/>
+        <constraint>
+          <expression xsi:type="gotten:OCLComplexExpression">
+            <feat xsi:type="ecore:EAttribute" href="VideoStream.ecore#//SearchVideo/orderType"/>
+          </expression>
+        </constraint>
+      </features>
+    </featureDefinitions>
+    <featureDefinitions output="true">
+      <features name="NVideos" dataType="Long"/>
+      <features name="OutputVideoId" dataType="Long"/>
+      <features name="OutputVideoTitle" dataType="String"/>
+    </featureDefinitions>
+    <processors>
+      <entries name="Name" type="String"/>
+      <entries name="Version" type="String"/>
+    </processors>
+    <rules name="MR1">
+      <leftHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.0"/>
+        </exp1>
+        <opType>and</opType>
+        <exp2 xsi:type="gotten:MetamorphicExpression">
+          <exp1 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.2"/>
+          </exp1>
+          <opType>>=</opType>
+          <exp2 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.2"/>
+          </exp2>
+        </exp2>
+      </leftHandSide>
+      <rightHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.0"/>
+        </exp1>
+        <opType>>=</opType>
+        <exp2 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.0"/>
+        </exp2>
+      </rightHandSide>
+    </rules>
+    <rules name="MR2">
+      <leftHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.0"/>
+        </exp1>
+        <opType>and</opType>
+        <exp2 xsi:type="gotten:MetamorphicExpression">
+          <exp1 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.3"/>
+          </exp1>
+          <opType>&lt;></opType>
+          <exp2 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.3"/>
+          </exp2>
+        </exp2>
+      </leftHandSide>
+      <rightHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.0"/>
+        </exp1>
+        <opType>==</opType>
+        <exp2 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.0"/>
+        </exp2>
+      </rightHandSide>
+    </rules>
+    <rules name="MR3">
+      <leftHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:AtomicExpression">
+          <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          <feature href="../bin/videostreaming.gotten#//@featureDefinitions.0/@features.1"/>
+        </exp1>
+        <opType>and</opType>
+        <exp2 xsi:type="gotten:MetamorphicExpression">
+          <exp1 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+          </exp1>
+          <opType>==</opType>
+          <exp2 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+          </exp2>
+        </exp2>
+      </leftHandSide>
+      <rightHandSide xsi:type="gotten:MetamorphicExpression">
+        <exp1 xsi:type="gotten:MetamorphicExpression">
+          <exp1 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.1"/>
+          </exp1>
+          <opType>&lt;></opType>
+          <exp2 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.1"/>
+          </exp2>
+        </exp1>
+        <opType>and</opType>
+        <exp2 xsi:type="gotten:MetamorphicExpression">
+          <exp1 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.2"/>
+          </exp1>
+          <opType>==</opType>
+          <exp2 xsi:type="gotten:AtomicExpression">
+            <model href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+            <feature href="../bin/videostreaming.gotten#//@featureDefinitions.1/@features.2"/>
+          </exp2>
+        </exp2>
+      </rightHandSide>
+    </rules>
+  </gotten:GottenEnvironment>
+  <followup:FollowUpEnvironment iterations="1" maxSolutions="3" path="/video/model/videotc" output="/video/model/videotc">
+    <metamodel href="../bin/videostreaming.gotten#//@definition/@metamodel.0"/>
+    <rules>
+      <operations xsi:type="followup:ModifyModel">
+        <operator>equals</operator>
+        <instances href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.0"/>
+        <instances href="../bin/videostreaming.gotten#//@definition/@metamodel.0/@instances.1"/>
+      </operations>
+    </rules>
+    <metrules href="../bin/videostreaming.gotten#//@rules.2"/>
+    <algorithms>Random</algorithms>
+    <algorithms>NSGAII</algorithms>
+    <algorithms>NSGAIII</algorithms>
+    <algorithms>eMOEA</algorithms>
+  </followup:FollowUpEnvironment>
+</xmi:XMI>

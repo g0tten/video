@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" totalResults="2">
+  <operation xsi:type="videostream:SearchVideo" maxResults="97" query="Dibu martinez"/>
+  <videos Title="&#xbf;Qu&#xe9; le dijo Dibu Mart&#xed;nez a los colombianos antes de patear los penales?" Description="Sin dudas la victoria por penales de Argentina ante Colombia quedar&#xe1; marcada por la presencia del arquero Emiliano &quot;Dibu&quot; Mart&#xed;nez y su show ante los pateadores colombianos &#xbf;Qu&#xe9; dijo?" Id="5d926a8a000b24172ee8c2bdf405fa5c90b1a191"/>
+  <videos Title="&#xa1;Con un enorme Dibu #MART&#xcd;NEZ, #ARGENTINA venci&#xf3; a #PA&#xcd;SESBAJOS por penales y clasific&#xf3; a semis!.mp4" Description="" Id="bb82024ce421b43fc2f03a1d01833320365e5f66"/>
+</videostream:OperationResult>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:VideoAPITest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1" xsi:schemaLocation="http://videostream/0.1 ../../../VideoStream.ecore" baseURL="https://youtube.googleapis.com/youtube/v3/" testName="Simple Youtube query">
+  <request xsi:type="videostream:SearchVideo" path="search" maxResults="24" query="best of esports"/>
+  <auth name="token" key="AIzaSyATE_DybvLwY4rh5RRtHoBlolNW5BoQvOY"/>
+</videostream:VideoAPITest>
