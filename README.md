@@ -71,10 +71,6 @@ MR3 | The update m1 is equal to the update m2. |
 &nbsp; | The video id returned by m1 should be different to the video id returned by m2. The video title returned by m1 should be equal to the video title returned by m2. |
 &nbsp; | MR3o = [ ((OutputVideoId(m1) <> OutputVideoId(m2)) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and (OutputVideoTitle(m1) == OutputVideoTitle(m2))) ] |
 
-### Gotten for YouTube and Vimeo project download link
-
-- [Gotten for YouTube and Vimeo](https://github.com/g0tten/video/zipball/main)
-
 ### Conducted experiment description with Gotten for YouTube and Vimeo
 
 For MR1 and MR2, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al.[^1], e.g. 'winter pentathlon 1949' and 'mistrustfully'. All tests could be reused for YouTube and Vimeo.
@@ -82,6 +78,13 @@ For MR1 and MR2, we designed the source test cases selecting queries based on tr
 Executing all tests in YouTube took 4 minutes and 4 seconds, and 10 minutes and 36 seconds for Vimeo. The results show that the proposed framework is not only able to model the MRs provided - in natural language - by Segura et al.[^1], but is able to reproduce the obtained results and detect real issues reported in the [issue tracking systems](https://code.google.com/p/gdata-issues/issues/detail?id=5173) of the studied platforms.
 
 [^1]: Metamorphic testing of RESTful web APIs. S. Segura, J. A. Parejo, J. Troya, and A. Ruiz Cortés. IEEE Trans. Software Eng., 44(11):1083–1099, 2018.
+
+### Gotten for YouTube and Vimeo project download link
+
+You can download the Gotten project for YouTube and Vimeo platforms along all the data generated and used in the performed experiment described above here:
+
+- [Gotten for YouTube and Vimeo](https://github.com/g0tten/video/zipball/main)
+
 
 ### Acknowledgements
 This work has been funded by the Spanish Ministry of Science (RTI2018-095255-B-I00, project "MASSIVE") and the R&D programme of Madrid (P2018/TCS-4314, project "[FORTE](https://antares.sip.ucm.es/forte-cm/)").
