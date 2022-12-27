@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1">
+  <operation xsi:type="videostream:UploadVideo" localPath="C:/eclipse/runtime-EclipseApplication8/video/video/seed_synthesis_CAISE_2020_june_R2.mp4">
+    <video Title="Wodel Seed Synthesis - CAISE Forum 2020" Description="Wodel Seed Synthesis - CAISE Forum 2020"/>
+  </operation>
+  <videos Title="Wodel Seed Synthesis - CAISE Forum 2020" Description="Wodel Seed Synthesis - CAISE Forum 2020" Id="784598722"/>
+</videostream:OperationResult>

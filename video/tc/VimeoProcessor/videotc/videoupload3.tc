@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<videostream:OperationResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:videostream="http://videostream/0.1">
+  <operation xsi:type="videostream:UploadVideo" localPath="C:/eclipse/runtime-EclipseApplication8/video/video/scico_2022_wodel-edu.mp4">
+    <video Title="Wodel-Edu presentation - SCICO 2022" Description="Wodel-Edu presentation - SCICO 2022"/>
+  </operation>
+  <videos Title="Wodel-Edu presentation - SCICO 2022" Description="Wodel-Edu presentation - SCICO 2022" Id="784598690"/>
+</videostream:OperationResult>

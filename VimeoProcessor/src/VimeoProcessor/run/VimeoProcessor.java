@@ -40,7 +40,7 @@ public class VimeoProcessor extends Processor {
 			for (Resource model : models) {
 				String modelName = model.getURI().toFileString().substring(model.getURI().toFileString().lastIndexOf(File.separator + "model" + File.separator) + (File.pathSeparator + "model" + File.separator).length(), model.getURI().toFileString().length());
 				String outputSimpleName = modelName.substring(modelName.lastIndexOf(File.separator) + 1, modelName.length());
-				outputSimpleName = outputSimpleName.replace("input_", "output_").replace("workload_", "output_").replace("followup_", "output_").replace(".model", ".tc");
+				outputSimpleName = outputSimpleName.replace("input_", "tc_").replace("workload_", "tc_").replace("followup_", "tc_").replace(".model", ".tc");
 
 				System.out.println("outputSimpleName: " + outputSimpleName);
 				String outputFileName = modelName.substring(0, modelName.lastIndexOf(File.separator) + 1) + outputSimpleName;
@@ -65,6 +65,8 @@ public class VimeoProcessor extends Processor {
 //					EObject resourceRoot;
 					Resource testModel;
 					int nResults;
+					String videoId;
+					String videoTitle;
 
 					//metamodelPath = "/home/j0hn/Documents/GitHub/metamorphic/code_REST/REST_Gotten/metamodel/VideoStream.ecore";
 					//metamodelPath = "C:/eclipse/runtime-EclipseApplication6/video/model/VideoStream.ecore";
@@ -114,11 +116,42 @@ public class VimeoProcessor extends Processor {
 							System.out.println("getProcessorFeature - Exception while reading feature: "+name);
 						}
 					}
-					else if(name.indexOf("VideoId") != -1)
+					else if(name.indexOf("OutputVideoId") != -1)
 					{
 							System.out.println("getProcessorFeature - Reading feature VideoId");
+							
+							try {
+								Object object = ModelManager.getReferencedNoException("videos", rootTest);
+								if (object != null && object instanceof List<?>) {
+									List<EObject> videos = (List<EObject>) object;
+									for (EObject video : videos) {
+										videoId = (String) ModelManager.getAttributeValue("Id", video);
+										values.add(videoId);
+									}
+								}
+								
+							}catch(Exception e)
+							{
+								System.out.println("getProcessorFeature - Exception while reading feature: "+name);
+							}
 					}
-						
+					else if (name.indexOf("OutputVideoTitle") != -1)
+					{
+						try {
+							Object object = ModelManager.getReferencedNoException("videos", rootTest);
+							if (object != null && object instanceof List<?>) {
+								List<EObject> videos = (List<EObject>) object;
+								for (EObject video : videos) {
+									videoTitle = (String) ModelManager.getAttributeValue("Title", video);
+									values.add(videoTitle);
+								}
+							}
+							
+						}catch(Exception e)
+						{
+							System.out.println("getProcessorFeature - Exception while reading feature: "+name);
+						}
+					}
 				}
 			}
 		}
