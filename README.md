@@ -75,7 +75,7 @@ MR3 | The update m1 is equal to the update m2. |
 
 - [Gotten for YouTube and Vimeo](https://github.com/g0tten/video/zipball/main)
 
-### Conducted experiment data with Gotten for YouTube and Vimeo
+### Conducted experiment description with Gotten for YouTube and Vimeo
 
 For MR1 and MR2, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al. [^1], e.g. 'winter pentathlon 1949' and 'mistrustfully',. All tests could be reused for YouTube and Vimeo.
 
