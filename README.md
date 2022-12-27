@@ -81,7 +81,7 @@ Executing all tests in YouTube took 4 minutes and 4 seconds, and 10 minutes and 
 
 ### Gotten for YouTube and Vimeo project download link
 
-You can download the Gotten project for YouTube and Vimeo platforms along all the data generated and used in the performed experiment described above here:
+You can download the Gotten project for YouTube and Vimeo platforms along with all the data generated and used in the performed experiment described above here:
 
 - [Gotten for YouTube and Vimeo](https://github.com/g0tten/video/zipball/main)
 
