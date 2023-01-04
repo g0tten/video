@@ -85,6 +85,11 @@ You can download the Gotten project for YouTube and Vimeo platforms along with a
 
 - [Gotten for YouTube and Vimeo](https://github.com/g0tten/video/zipball/main)
 
+### Gotten for video streaming APIs environment in action
+
+- You can watch a video demo of the Gotten environment for Video Streaming APIs in action (click on image to see YouTube demo):
+
+[![Gotten for video streaming APIs environment in action](https://raw.githubusercontent.com/g0tten/images/main/ide/gotten_video_screenshot.png)](https://youtu.be/10MDPC9jQQI)
 
 ### Acknowledgements
 This work has been funded by the Spanish Ministry of Science (RTI2018-095255-B-I00, project "MASSIVE") and the R&D programme of Madrid (P2018/TCS-4314, project "[FORTE](https://antares.sip.ucm.es/forte-cm/)").
