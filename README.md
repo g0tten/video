@@ -87,7 +87,7 @@ You can download the Gotten project for YouTube and Vimeo platforms along with a
 
 ### Gotten for video streaming APIs environment in action
 
-- You can watch a video demo of the Gotten environment for Video Streaming APIs in action (click on image to see YouTube demo):
+- Click on the image below to watch a video demo of the Gotten environment for Video Streaming APIs:
 
 [![Gotten for video streaming APIs environment in action](https://raw.githubusercontent.com/g0tten/images/main/ide/gotten_video_screenshot.png)](https://youtu.be/10MDPC9jQQI)
 
