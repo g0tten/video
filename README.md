@@ -21,14 +21,20 @@ metamodel videostream "/video/model/VideoStream.ecore" with m1, m2
 models "/video/model/videotc" 
 
 videostream input Features {
-  context VideoAPITest def: IsSearch: Boolean = request.oclIsTypeOf(SearchVideo)
+	context VideoAPITest def: IsFullSearch: Boolean = 
+          request.oclIsTypeOf(SearchVideo) 
+          and request.oclAsType(SearchVideo).maxResults = -1
   context VideoAPITest def: IsUpdate: Boolean = request.oclIsTypeOf(UpdateVideo)
   context SearchVideo def: MaxResults: Int = maxResults
   context SearchVideo def: SearchOrder: Int = orderType
-}
+  context SearchVideo def: UntilYear: Int = until.year
+  context SearchVideo def: FromYear: Int = from.year
+  context SearchVideo def: Radius: Double = position.radius
+}  
 
 output Features {
   NVideos : Long
+  Results: Set
   OutputVideoId: Long
   OutputVideoTitle: String
 }
@@ -39,41 +45,51 @@ Processor {
 }
  
 MetamorphicRelations {
- MR1 = [ (IsSearch(m1) and (MaxResults(m1) >= MaxResults(m2))) 
+ MR1 = [ (IsFullSearch(m1) and SearchOrder(m1) <> SearchOrder(m2)) 
+         implies (NVideos(m1) == NVideos(m2)) ]
+ MR2 = [ (IsFullSearch(m1) and UntilYear(m1) < FromYear(m2))
+         implies (Results(m1)->excludes(Results(m2))) ]
+ MR3 = [ (IsFullSearch(m1) and Radius(m1) > Radius(m2))
+         implies (Results(m1)->includes(Results(m2))) ]
+ MR4 = [ (IsFullSearch(m1) and MaxResults(m1) >= MaxResults(m2)) 
+         implies (NVideos(m1) >= NVideos(m2))]
+ MR5 = [ (IsUpdate(m1) and m1 == m2)
          implies 
-         (NVideos(m1) >= NVideos(m2))]
- MR2 = [ (IsSearch(m1) and (SearchOrder(m1) <> SearchOrder(m2))) 
-         implies 
-         (NVideos(m1) == NVideos(m2))]
- MR3 = [ (IsUpdate(m1) and ((m1) == (m2)))
-         implies 
-         ((OutputVideoId(m1) <> OutputVideoId(m2)) and
-         (OutputVideoTitle(m1) == OutputVideoTitle(m2)))]
+         (OutputVideoId(m1) <> OutputVideoId(m2) and
+         OutputVideoTitle(m1) == OutputVideoTitle(m2))]
 }
 ```
 
 ### MRs for video streaming APIs brief description
 
-Below we provide a brief description of these 3 MRs for video streaming APIs:
+Below we provide a brief description of these 5 MRs for video streaming APIs:
 
 Relation | Description |
 --- | :--- | 
-MR1 | The maximum number of videos requested by the search m1 is greater than or equals to the maximum number of videos requested by the search m2. |
-&nbsp; | MR1i = [ (IsSearch(m1) and (MaxResults(m1) >= MaxResults(m2))) ] |
-&nbsp; | The number of videos returned by the search m1 should be greater than or equal to the number of videos returned by the search m2. |
-&nbsp; | MR1o = [ (NVideos(m1) >= NVideos(m2))] |
-MR2 | The search order of m1 is different to the search order of m2. |
-&nbsp; | MR2i = [ (IsSearch(m1) and (SearchOrder(m1) <> SearchOrder(m2)))  ] |
+MR1 | The search order of m1 is different to the search order of m2. |
+&nbsp; | MR1i = [ (IsFullSearch(m1) and SearchOrder(m1) <> SearchOrder(m2))  ] |
 &nbsp; | The number of videos returned by the search m1 should be equal to the number of videos returned by the search m2. |
-&nbsp; | MR2o = [ (NVideos(m1) == NVideos(m2))] |
-MR3 | The update m1 is equal to the update m2. |
-&nbsp; | MR3i = [ (IsUpdate(m1) and ((m1) == (m2)) ] |
+&nbsp; | MR1o = [ (NVideos(m1) == NVideos(m2))] |
+MR2 | The search until year of m1 is lower than the search from year of m2. |
+&nbsp; | MR2i = [ (IsFullSearch(m1) and UntilYear(m1) < FromYear(m2))  ] |
+&nbsp; | The set of results returned by the search m1 should exclude the set of results returned by the search m2. |
+&nbsp; | MR2o = [ (Results(m1)->excludes(Results(m2)))] |
+MR3 | The search radius of m1 is greater than the search radius of m2. |
+&nbsp; | MR3i = [ (IsFullSearch(m1) and Radius(m1) > Radius(m2))  ] |
+&nbsp; | The set of results returned by the search m1 should include the set of results returned by the search m2. |
+&nbsp; | MR3o = [ (Results(m1)->includes(Results(m2)))] |
+MR4 | The maximum number of videos requested by the search m1 is greater than or equals to the maximum number of videos requested by the search m2. |
+&nbsp; | MR4i = [ (IsSearch(m1) and MaxResults(m1) >= MaxResults(m2)) ] |
+&nbsp; | The number of videos returned by the search m1 should be greater than or equal to the number of videos returned by the search m2. |
+&nbsp; | MR4o = [ (NVideos(m1) >= NVideos(m2))] |
+MR5 | The update m1 is equal to the update m2. |
+&nbsp; | MR5i = [ (IsUpdate(m1) and m1 == m2) ] |
 &nbsp; | The video id returned by m1 should be different to the video id returned by m2. The video title returned by m1 should be equal to the video title returned by m2. |
-&nbsp; | MR3o = [ ((OutputVideoId(m1) <> OutputVideoId(m2)) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and (OutputVideoTitle(m1) == OutputVideoTitle(m2))) ] |
+&nbsp; | MR5o = [ (OutputVideoId(m1) <> OutputVideoId(m2)) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and (OutputVideoTitle(m1) == OutputVideoTitle(m2))) ] |
 
 ### Conducted experiment description with Gotten for YouTube and Vimeo
 
-For MR1 and MR2, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al.[^1], e.g. 'winter pentathlon 1949' and 'mistrustfully'. All tests could be reused for YouTube and Vimeo.
+For MR1 and MR4, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al.[^1], e.g. 'winter pentathlon 1949' and 'mistrustfully'. All tests could be reused for YouTube and Vimeo.
 
 Executing all tests in YouTube took 4 minutes and 4 seconds, and 10 minutes and 36 seconds for Vimeo. The results show that the proposed framework is not only able to model the MRs provided - in natural language - by Segura et al.[^1], but is able to reproduce the obtained results and detect real issues reported in the [issue tracking systems](https://code.google.com/p/gdata-issues/issues/detail?id=5173) of the studied platforms.
 
