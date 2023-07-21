@@ -89,7 +89,7 @@ MR5 | The update m1 is equal to the update m2. |
 
 ### Conducted experiment description with Gotten for YouTube and Vimeo
 
-For MR1 and MR4, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al.[^1], e.g. 'winter pentathlon 1949' and 'mistrustfully'. All tests could be reused for YouTube and Vimeo.
+We have performed a experiment for MR1, MR4 and MR5. For MR1 and MR4, we designed the source test cases selecting queries based on trending searches from YouTube and Vimeo (e.g 'world cup', 'esports', etc.) and complemented them with some corner cases extracted from Segura et al.[^1], e.g. 'winter pentathlon 1949' and 'mistrustfully'. All tests could be reused for YouTube and Vimeo.
 
 Executing all tests in YouTube took 4 minutes and 4 seconds, and 10 minutes and 36 seconds for Vimeo. The results show that the proposed framework is not only able to model the MRs provided - in natural language - by Segura et al.[^1], but is able to reproduce the obtained results and detect real issues reported in the [issue tracking systems](https://code.google.com/p/gdata-issues/issues/detail?id=5173) of the studied platforms.
 
